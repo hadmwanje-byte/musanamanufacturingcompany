@@ -1,4 +1,33 @@
-*.log
+# Local environment and secrets
 .env
+.env.*
+!.env.example
+config.local.php
+database.php.local
+*.pem
+*.key
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.old
 .DS_Store
 Thumbs.db
+
+# Editor and operating-system files
+.vscode/
+.idea/
+*.swp
+
+# Dependencies and generated files
+/vendor/
+/node_modules/
+/cache/
+/tmp/
+
+# Local database exports and backups
+*.sql
+*.sqlite
+*.db
+/backups/
